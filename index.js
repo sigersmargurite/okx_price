@@ -10,7 +10,7 @@ var trust_ips = []
 
 const checkLimiter = rateLimit({
     windowMs: 1 * 60 * 1000,
-    max: 3,
+    max: 10,
     message: 'Please wait',
     headers: true
 })
