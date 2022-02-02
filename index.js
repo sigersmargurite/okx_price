@@ -21,7 +21,7 @@ app.use(compression())
 app.use(cors())
 app.use('/price', checkLimiter)
 
-app.post('/price', checkLimiter, (req, resp) => {
+app.get('/price', checkLimiter, (req, resp) => {
     try {
         const inst = req.query.inst
         const url = `https://www.okx.com/priapi/v5/market/mult-tickers?t=${new Date()}&instIds=${inst}`
