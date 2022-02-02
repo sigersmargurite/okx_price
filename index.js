@@ -16,6 +16,7 @@ const checkLimiter = rateLimit({
 })
 
 app.set('port', (process.env.PORT || 5000))
+app.set('json spaces', 4)
 app.use(express.json())
 app.use(compression())
 app.use(cors())
