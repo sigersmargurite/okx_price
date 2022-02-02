@@ -34,7 +34,7 @@ app.get('/price', checkLimiter, (req, resp) => {
             .then((jsonResponse) => {
                 const data = jsonResponse
                 if (data.code == "0") {
-                  resp.send(data)
+                  resp.send(data.data)
                 }
                 throw `Request check: ${data.code}`
             })
