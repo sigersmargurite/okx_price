@@ -1,0 +1,34 @@
+{
+  "name": "OKX Price",
+  "version": "1.0.0",
+  "description": "Get price from OKX",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "compression": "^1.7.4",
+    "node-fetch": "^3.2.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^6.2.0"
+  },
+  "engines": {
+    "node": "16.13.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koval/okx_price"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Yaroslav Koval",
+  "contributors": [
+    "Yaroslav Koval <yaroslav@koval.page> (https://yaroslav.koval.page)"
+  ],
+  "license": "MIT",
+  "type": "module"
+}
