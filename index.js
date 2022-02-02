@@ -35,10 +35,10 @@ app.get('/price', checkLimiter, (req, resp) => {
                 if (data.code == "0") {
                   resp.send(data)
                 }
-                throw 0
+                throw `Request check: ${data.code}`
             })
             .catch((err) => {
-                console.error(`Error request: ${err}`);
+                throw `Error request: ${err}`
             })
     } catch (e) {
         console.log(`Error in get price: ${e}`)
