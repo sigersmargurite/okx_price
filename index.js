@@ -38,7 +38,7 @@ app.get('/price', checkLimiter, (req, resp) => {
                 throw 0
             })
             .catch((err) => {
-                console.error(`Error request ReCaptcha (${ip}): ${err}`);
+                console.error(`Error request: ${err}`);
             })
     } catch (e) {
         console.log(`Error in get price: ${e}`)
