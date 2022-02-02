@@ -26,7 +26,7 @@ app.get('/price', checkLimiter, (req, resp) => {
         const inst = req.query.inst
         const url = `https://www.okx.com/priapi/v5/market/mult-tickers?t=${new Date()}&instIds=${inst}`
 
-        const response = fetch(url, { method: 'post' })
+        const response = fetch(url, { method: 'get' })
             .then((res) => { 
                 return res.json()
             })
